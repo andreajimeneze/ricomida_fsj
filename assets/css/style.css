@@ -13,7 +13,7 @@
 * {
   margin: 0;
   box-sizing: 0;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
   .os-lobster-regular {
@@ -38,18 +38,16 @@
 .c-white {
   color: var(--c-white);
 }
-/* .navbar-brand {
-  font-family: var(--lobster);
-  font-size: 37px;
-} */
+
 .nav-link {
   color: var(--c-white);
 }
 
-/* .btn-custom {
-  background-color: var(--c-white) !important;
-  border: 1px var(--c-light-grey) !important;
-} */
+.linea {
+  /* border-bottom-color: ; */
+  border: var(--bs-black) 1px solid;
+  color: var(--bs-black);
+}
 
 
 .btn-bd-primary {
@@ -77,11 +75,6 @@
   color: var(--c-white);
   height: 534px;
 }
-.carousel-item img {
-  width: 233px;
-  height: 170px;
-}
-
 
 footer {
   height: 127px;
@@ -97,10 +90,12 @@ footer {
     height: 384px;
   }
   
-
-  .card img {
-    object-fit: cover;
-    width: 20rem;
-    height: auto;
+  .card {
+    width: 17rem !important;
+}
+ 
+  .carousel-item img {
+    width: 233px;
+    height: 170px;
   }
 }

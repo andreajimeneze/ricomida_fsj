@@ -21,8 +21,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-body-custom">
-            <div class="container-fluid mx-5">
-                <a class="navbar-brand c-white os-lobster-regular" href="#">Ricomida</a>
+            <div class="container-fluid mx-5 px-0">
+                <a class="navbar-brand c-white os-lobster-regular fs-1" href="#">Ricomida</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
         </nav>
     </header>
     <main class="container px-0">
-        <section class="principal p-4 py-md-5">
+        <section class="principal px-4  pt-4 pt-md-5">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12 col-md-6">
@@ -57,9 +57,12 @@
                     <div class="col-12 col-md-6 mt-5">
                         <div class="text-center text-md-start">
                             <h1>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
-                            <h5 class="my-5">110 MIN / 6 A 8 PORCIONES</h5>
+
+                            <hr class="linea mt-5">
+
+                            <h5 class="mb-5">110 MIN / 6 A 8 PORCIONES</h5>
                         </div>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <div class="d-flex gap-2 justify-content-md-start">
                             <button class="btn btn-bd-primary me-md-2" type="button">Enviar por correo</button>
                             <button class="btn btn-bd-primary" type="button">Añadir a favoritos</button>
                         </div>
@@ -79,35 +82,49 @@
                 <div class="carousel-inner">
 
                     <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <img src="./assets/img/slider-1.png" class="d-block w-100" alt="imagen de champiñones">
-                            </div>
 
-                            <div class="col-md-3">
-                                <img src="./assets/img/slider-2.png" class="d-block w-100" alt="imagen de pizza">
-                            </div>
-                            <div class="col-md-3">
-                                <img src="./assets/img/slider-3.png" class="d-block w-100" alt="imagen masa pizza">
-                            </div>
-                            <div class="col-md-3">
-                                <img src="./assets/img/slider-4.png" class="d-block w-100" alt="imagen masa pizza">
-                            </div>
+                        <div class="d-flex w-100 gap-3">
+                            <img src="./assets/img/slider-1.png" class="d-block w-25" alt="imagen de champiñones">
+
+                            <img src="./assets/img/slider-2.png" class="d-block w-25" alt="imagen de pizza">
+
+                            <img src="./assets/img/slider-3.png" class="d-block w-25" alt="imagen masa pizza">
+
+                            <img src="./assets/img/slider-4.png" class="d-block w-25" alt="imagen masa pizza">
+                        </div>
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <div class="d-flex w-100 gap-3">
+                            <img src="./assets/img/slider-5.png" class="d-block w-25" alt="imagen de champiñones">
+
+                            <img src="./assets/img/slider-6.png" class="d-block w-25" alt="imagen de pizza">
+
+                            <img src="./assets/img/slider-7.png" class="d-block w-25" alt="imagen masa pizza">
+
+                            <img src="./assets/img/slider-8.png" class="d-block w-25" alt="imagen masa pizza">
                         </div>
                     </div>
                 </div>
+               
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
+
+            <hr class="linea mt-5">
+
             <div class="row os-cabin-regular fs-6 my-5 receta">
                 <div class="ingredientes col-md-6">
                     <h5>INGREDIENTES</h5>
@@ -194,10 +211,12 @@
             </div>
         </section>
 
-        <section class="principal p-5 my-md-5">
+        <hr class="linea mt-0">
+
+        <section class="otras-recetas px-5 pb-5 mt-md-3">
             <h2 class="text-center">RECETAS RELACIONADAS</h2>
             <div class="container my-5">
-                <div class="row justify-content-center gap-2">
+                <div class="row justify-content-center gap-3">
                     <div class="card col-md-4 px-0" style="width: 20rem;">
                         <img src="./assets/img/recipe-card-1.png" class="card-img-top img-fluid"
                             alt="imagen panqueques con manjar y crema">
@@ -232,16 +251,16 @@
         </section>
     </main>
     <section class="suscripcion d-flex flex-column justify-content-center bg-body-custom text-center">
-<div class="mx-4">
-                <h2 class="os-cabin-bold fs-1">SUSCRÍBETE EN NUESTRO NEWSLETTER</h2>
-                <div class="d-flex flex-wrap justify-content-center">
-                    <span class="os-cabin-regular fs-5 fs-md-3">y obtén las mejores recetas que tenemos en</span>
-                    <span class="os-lobster-regular fs-5 fs-md-3"> Ricomida</span>
-                </div>
+        <div class="mx-4">
+            <h2 class="os-cabin-bold fs-1">SUSCRÍBETE EN NUESTRO NEWSLETTER</h2>
+            <div class="d-flex flex-wrap justify-content-center">
+                <span class="os-cabin-regular fs-5 fs-md-3">y obtén las mejores recetas que tenemos en</span>
+                <span class="os-lobster-regular fs-5 fs-md-3"> Ricomida</span>
             </div>
-            <div>
-                <button class="btn os-cabin-regular btn-bd-custom">Empezar</button>
-            </div>
+        </div>
+        <div class="mt-5">
+            <button class="btn os-cabin-regular btn-outline-light px-5">Empezar</button>
+        </div>
         </div>
     </section>
     <footer class=" d-flex justify-content-center align-items-center bg-body-custom">
