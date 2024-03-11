@@ -1,0 +1,106 @@
+:root {
+    --lobster: "lobster", sans-serif;
+    --cabin: "cabin", sans-serif;
+    --regular: 400;
+    --bold: 700;
+    --c-dark: #373a3c;
+    --c-light-grey: #dddddd;
+    --c-black: #000;
+    --c-white: #fff;
+    --c-red: #dc3545;
+  }
+  
+* {
+  margin: 0;
+  box-sizing: 0;
+  border: 1px red solid;
+}
+
+  .os-lobster-regular {
+    font-family: var(--lobster);
+    font-weight: var(--regular);
+  }
+  
+  .os-cabin-regular {
+    font-family: var(--cabin);
+    font-weight: var(--regular);
+  }
+
+  .os-cabin-bold {
+    font-family: var(--cabin);
+    font-weight: var(--bold);
+  }
+  
+.bg-body-custom {
+  background-color: var(--c-dark);
+}
+
+.c-white {
+  color: var(--c-white);
+}
+/* .navbar-brand {
+  font-family: var(--lobster);
+  font-size: 37px;
+} */
+.nav-link {
+  color: var(--c-white);
+}
+
+/* .btn-custom {
+  background-color: var(--c-white) !important;
+  border: 1px var(--c-light-grey) !important;
+} */
+
+
+.btn-bd-primary {
+  --bs-btn-font-family: var(--cabin);
+  --bs-btn-font-weight: var(--regular);
+  --bs-btn-color: var(--c-black);
+  --bs-btn-bg: var(--c-white);
+  --bs-btn-border-color: var(--c-light-grey);
+}
+
+.suscripcion.btn-bd-custom {
+  --bs-btn-font-family: var(--cabin);
+  --bs-btn-font-weight: var(--regular);
+  --bs-btn-color: var(--c-white);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: var(--c-light-grey);
+}
+
+.ingredientes div {
+  line-height: 0.8;
+}
+
+.suscripcion.bg-body-custom {
+  background-color: var(--c-red);
+  color: var(--c-white);
+  height: 534px;
+}
+.carousel-item img {
+  width: 233px;
+  height: 170px;
+}
+
+
+footer {
+  height: 127px;
+}
+
+@media screen and (min-width: 765px) {
+  .receta div {
+    font-size: 20px;
+  }
+
+  .principal img {
+    width: 482px;
+    height: 384px;
+  }
+  
+
+  .card img {
+    object-fit: cover;
+    width: 20rem;
+    height: auto;
+  }
+}
